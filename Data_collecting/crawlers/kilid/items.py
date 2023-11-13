@@ -6,22 +6,20 @@
 import scrapy
 
 
-class KilidItem(scrapy.Item):
+class Item(scrapy.Item):
     title = scrapy.Field()
     price = scrapy.Field()
     price_per_meter = scrapy.Field()
-    region_city_loc = scrapy.Field()
+    address = scrapy.Field()
     longitude = scrapy.Field()
     latitude = scrapy.Field()
     properties = scrapy.Field()
-    # facilities = scrapy.Field()
     func = scrapy.Field()
     type = scrapy.Field()
     meterage = scrapy.Field()
+    floor = scrapy.Field()
     date = scrapy.Field()
     bedroom = scrapy.Field()
     parking = scrapy.Field()
     age = scrapy.Field()
-    city = scrapy.Field()
-    region = scrapy.Field()
-    location = scrapy.Field()
+    facilities = scrapy.Field()

@@ -6,7 +6,21 @@
 import scrapy
 
 
-class DivarItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class Item(scrapy.Item):
+    title = scrapy.Field()
+    price = scrapy.Field()
+    price_per_meter = scrapy.Field()
+    address = scrapy.Field()
+    longitude = scrapy.Field()
+    latitude = scrapy.Field()
+    properties = scrapy.Field()
+    meterage_age_bedroom_facilities = scrapy.Field()
+    func = scrapy.Field()
+    type = scrapy.Field()
+    meterage = scrapy.Field()
+    floor = scrapy.Field()
+    date = scrapy.Field()
+    bedroom = scrapy.Field()
+    parking = scrapy.Field()
+    age = scrapy.Field()
+    facilities = scrapy.Field()
